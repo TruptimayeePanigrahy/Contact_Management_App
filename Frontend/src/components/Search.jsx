@@ -35,8 +35,7 @@ function Search() {
                       <th>Name</th>
                       <th>Email</th>
                       <th>Number</th>
-                      <th>Edit</th>
-                      <th>Delete</th>
+                      
                     </tr>
                   </thead>
                  <tbody>
@@ -45,8 +44,7 @@ function Search() {
                         <td>{contact.name}</td>
                         <td>{contact.email}</td>
                         <td>{contact.number}</td>
-                        <td>Edit</td>
-                        <td>Delete</td>
+                        
                       </tr>
                     ))}
                   </tbody>
