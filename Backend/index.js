@@ -8,9 +8,9 @@ app.use(cors())
 app.use("/", route)
 
 
-// app.get("/", (req, res) => {
-//     res.send("Home page")
-// })
+app.get("/", (req, res) => {
+    res.send("Home page")
+})
 
 
 app.listen(process.env.port,async () => {
