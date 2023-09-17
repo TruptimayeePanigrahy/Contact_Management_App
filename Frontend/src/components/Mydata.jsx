@@ -9,7 +9,7 @@ export default function Mydata() {
     const [abc,setabc]=useState([])
    const getContactById = async () => {
     try {
-      const response = await fetch(`http://localhost:7890/user/${data}`);
+      const response = await fetch(`https://contacts-m5b0.onrender.com/user/${data}`);
       if (!response.ok) {
         throw new Error('Failed to fetch contact by ID');
       }

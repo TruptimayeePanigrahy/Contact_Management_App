@@ -14,7 +14,7 @@ export default function Showdata() {
   }, []);
 
   const fetchData = () => {
-    fetch('http://localhost:7890/contacts')
+    fetch('https://contacts-m5b0.onrender.com/contacts')
       .then((res) => res.json())
       .then((data) => {
         setpostdata(data.contacts);
@@ -26,7 +26,7 @@ export default function Showdata() {
   };
 
   const deleteContact = (id) => {
-    fetch(`http://localhost:7890/contacts/${id}`, {
+    fetch(`https://contacts-m5b0.onrender.com/contacts/${id}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())
@@ -59,10 +59,10 @@ export default function Showdata() {
   };
 
   const handleEditSubmit = (id, updatedPost) => {
-    // Send the updated post data to the backend
+    
     console.log("Updated Post:", updatedPost);
     // ... implement update logic ...
-    fetch(`http://localhost:7890/contacts/${id}`, {
+    fetch(`https://contacts-m5b0.onrender.com/contacts/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedPost),

@@ -6,7 +6,7 @@ export default function Navbar() {
   const handleDownload = () => {
    
     axios
-      .get('http://localhost:7890/generate-pdf', { responseType: 'blob' }) 
+      .get('https://contacts-m5b0.onrender.com/generate-pdf', { responseType: 'blob' }) 
       .then(response => {
         
         const blob = new Blob([response.data], { type: 'application/pdf' });

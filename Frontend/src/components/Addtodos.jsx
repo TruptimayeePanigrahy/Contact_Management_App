@@ -17,7 +17,7 @@ function Addtodos() {
       email: newemail,
     };
 
-   fetch("http://localhost:7890/contacts", {
+   fetch("https://contacts-m5b0.onrender.com/contacts", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(obj)

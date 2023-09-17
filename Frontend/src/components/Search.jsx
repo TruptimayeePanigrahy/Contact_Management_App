@@ -10,7 +10,7 @@ function Search() {
   
   const handlesearch = (e) => {
     setsearch(e.target.value)
-    fetch(`http://localhost:7890/api/search?query=${search}`)
+    fetch(`https://contacts-m5b0.onrender.com/api/search?query=${search}`)
       .then((res) => {
         return res.json()
       })

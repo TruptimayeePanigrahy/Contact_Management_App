@@ -8,7 +8,7 @@ function Sorting() {
     const selectedSort = e.target.value;
     setSort(selectedSort);
 
-    fetch(`http://localhost:7890/sort/${selectedSort}`)
+    fetch(`https://contacts-m5b0.onrender.com/sort/${selectedSort}`)
       .then((res) => res.json())
       .then((data) => {
         setResult(data.msg);
