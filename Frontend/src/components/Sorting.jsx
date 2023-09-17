@@ -21,7 +21,7 @@ function Sorting() {
 
   return (
     <div>
-          <select id="select" onChange={fetchData} value={sort}>
+          <select style={{padding:"10px 20px"}} id="select" onChange={fetchData} value={sort}>
               <option value="">Sort By Name</option>
         <option value="1">Ascending</option>
         <option value="-1">Descending</option>

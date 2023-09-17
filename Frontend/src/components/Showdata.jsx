@@ -101,9 +101,9 @@ export default function Showdata() {
               <td>{contact.name}</td>
               <td>{contact.email}</td>
               <td>{contact.number}</td>
-              <td><button onClick={() => edit(contact)}>Edit</button></td>
+              <td><button style={{padding:"10px",backgroundColor:"#a49e9e25",color:"white"}} onClick={() => edit(contact)}>Edit</button></td>
               <td>
-                <button onClick={() => deleteContact(contact._id)}>Delete</button>
+                <button style={{padding:"10px",backgroundColor:"#a49e9e25",color:"white"}} onClick={() => deleteContact(contact._id)}>Delete</button>
               </td>
             </tr>
           ))}

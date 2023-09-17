@@ -41,7 +41,7 @@ function EditModal({ isOpen, onRequestClose, post, onSubmit }) {
       contentLabel="Edit Modal"
       className="editmodel"
     >
-      <h2 style={{ textAlign: "center", color: "#058665" }}>Edit Post</h2>
+      <h2 style={{ textAlign: "center", color: "#058665" }}>Edit Contacts</h2>
       <label>
         Name<br/>
         <input type="text" value={newname} onChange={handleNameChange} />

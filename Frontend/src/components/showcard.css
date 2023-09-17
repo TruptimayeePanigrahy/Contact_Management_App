@@ -44,3 +44,17 @@ p{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: #1a0383;
 } */
+table{
+    margin: 50px;
+    
+    margin: 20px;
+    width:700px;
+padding:30px;
+}
+tbody{
+    color: white;
+}
+thead{
+    color: #13e5b1;
+    font-size: 20px;
+}

@@ -1,14 +1,35 @@
 .addtodos form{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
     border: 15px;
     width: 400px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #a49e9e25;
     
 }
 input[type="text"]{
     text-align: center;
     width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+input[type="submit"]{
+   padding: 10px 20px;
+   margin: 10px;
+   background-color: #058665;
+   color: white;
+   border-radius: 15px;
+   cursor: pointer;
 }
 .addtodos{
     display: flex;
     justify-content: start;
     margin: 50px 250px;
+}
+h3{
+    margin-top: 20px;
+    color:#0ee1ad
 }

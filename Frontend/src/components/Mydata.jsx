@@ -26,10 +26,14 @@ export default function Mydata() {
   };
     
     return (
-        <div className='appendcard'>
-            <h1>Get by Id</h1>
-           <input type="text" value={data} onChange={handleInputChange} />
-        <button onClick={getContactById}>Get by Id</button>
+      <div className='appendcard'>
+        <div>
+
+          <h1>Get By ID</h1>
+        <input type="text" value={data} onChange={handleInputChange} style={{ width: "400px", height:"50px"}} />
+        <button  style={{ width: "100px", height:"50px"}} onClick={getContactById}>Submit</button>
+        </div>
+            
          <table>
          <thead>
                     <tr>

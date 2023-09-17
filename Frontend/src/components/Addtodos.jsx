@@ -40,7 +40,7 @@ function Addtodos() {
         setname("");
         setemail("");
         setnumber("");
-           // Call the callback to refresh contacts in Maintask
+           
       })
       .catch((error) => {
         toast.error(error.message, {

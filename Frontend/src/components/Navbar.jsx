@@ -34,7 +34,7 @@ export default function Navbar() {
         <h1>Contacts App</h1>
       </div>
       <div className='content'>
-        <button onClick={handleDownload}>Download</button>
+        <button style={{padding:"10px",borderRadius:"5px",cursor:"pointer"}} onClick={handleDownload}>Download</button>
       </div>
     </div>
   );
