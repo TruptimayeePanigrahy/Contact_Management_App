@@ -13,7 +13,7 @@ route.get("/contacts",async (req,res)=>{
     }
 })
 
-route.get("/:id",async (req,res)=>{
+route.get("/user/:id",async (req,res)=>{
     try {
         let {id}=req.params
         console.log(id)

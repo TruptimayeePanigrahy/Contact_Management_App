@@ -1,0 +1,70 @@
+/* EditModal.css */
+
+.editmodel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 20px;
+    border-radius: 15px;
+     
+     box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #058665, 0 0 30px #058665,
+    0 0 40px #058665, 0 0 50px #058665;
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+  }
+  
+  .editmodel h2 {
+    margin-bottom: 10px;
+    
+  }
+  
+  .editmodel label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .editmodel input,
+  .editmodel textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #058665;
+  }
+  
+  .editmodel button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #058665;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .editmodel button.cancel {
+    background-color: #ccc;
+    margin-left: 10px;
+    
+  }
+  
+  .editmodel button:hover {
+    background-color: green;
+  }
+  
+  .btns{
+    display: flex;
+   justify-content:space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 40%;
+    margin: auto;
+  }
