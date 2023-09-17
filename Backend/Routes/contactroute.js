@@ -1,7 +1,8 @@
 const express = require("express")
 const {contactmodel}=require("../Model/contactmodel")
 const route = express.Router()
-
+const PDFDocument = require('pdfkit');
+const fs = require('fs');
 
 
 route.get("/contacts",async (req,res)=>{
@@ -83,6 +84,33 @@ route.get("/api/search", async (req, res) => {
 
 })
 
+route.get('/generate-pdf', async (req, res) => {
+  const doc = new PDFDocument();
+  doc.pipe(fs.createWriteStream('contacts.pdf'));
+
+  try {
+   
+    const contacts = await contactmodel.find();
+
+    
+    contacts.forEach(contact => {
+      doc.text(`Name: ${contact.name}`);
+      doc.text(`Number: ${contact.number}`);
+      doc.text(`Email: ${contact.email}`);
+      doc.text('---'); 
+    });
+
+    doc.end();
+
+    
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename=contacts.pdf');
+    fs.createReadStream('contacts.pdf').pipe(res);
+  } catch (error) {
+    console.error('Error generating PDF', error);
+    res.status(500).send('Error generating PDF');
+  }
+});
 
 
 module.exports={
