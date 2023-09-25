@@ -28,7 +28,7 @@ function Search() {
    
     
     <div>
-          <div><input type="text" placeholder='search here' value={search} onChange={handlesearch} /></div> 
+          <div><input type="text" placeholder='search any name here' value={search} onChange={handlesearch} /></div> 
           <table>
          <thead>
                     <tr>
